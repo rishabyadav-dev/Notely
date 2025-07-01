@@ -20,7 +20,7 @@ const Authform = ({ type }) => {
   async function handleSubmit(e) {
     e.preventDefault();
     setLoading(true);
-    setError(""); // Clear any previous errors
+    setError(""); 
     let signinResponse;
     let signupResponse;
     try {
@@ -35,7 +35,6 @@ const Authform = ({ type }) => {
           console.log("Login credentials correct now moving to home");
           navigate("/notes");
         } else {
-          // If login successful but no token returned, handle appropriately
           throw new Error("Login successful but no token received");
         }
       } else {
