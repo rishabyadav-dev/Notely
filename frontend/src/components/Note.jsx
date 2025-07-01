@@ -3,8 +3,6 @@ import { deletenote, editnote, softdeletenote } from "../services/noteService";
 import { delnotearrayState, notearrayState } from "../recoil/states";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import { SideBarState } from "../recoil/sidebarstate";
-// import { noteeditForm } from "../services/noteService";
-// import NoteEditForm from "../pages/Noteeditform";
 
 function Note({ title, content, id }) {
   const [notes, setNotes] = useRecoilState(notearrayState);
