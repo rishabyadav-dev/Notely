@@ -151,7 +151,6 @@ export default function Header() {
   const setpagetype = useSetRecoilState(pagetypeState);
   const navigate = useNavigate();
   const [notes, setnotesArr] = useRecoilState(notearrayState);
-  // const { fetchNotes } = useRetrieveNotes();
 
   return (
     <header className="flex h-[10vh] px-[10px]   items-center  border-b-2 border-black ">
@@ -162,7 +161,6 @@ export default function Header() {
         <RefreshButton />
         <SettingsButton />
         
-        {/* <Button variant="">Button</Button> */}
         
         <Logoutbut />
       </div>
