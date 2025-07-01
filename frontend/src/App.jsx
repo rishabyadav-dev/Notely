@@ -7,13 +7,10 @@ import {
 import React from "react";
 import Home from "./pages/Home";
 import CircularProgress from "@mui/material/CircularProgress";
-// import Box from "@mui/material/Box";
 import Authform from "./pages/Authform";
 import useAuthCheck from "./hooks/useAuthCheck";
 import useRetrieveNotes from "./hooks/RetrieveNotes";
-// import Bin from "./pages/bin";
-// import { pagetypeState } from "./recoil/pagetype";
-// import { useSetRecoilState } from "recoil";
+
 import SettingsPage from "./pages/Settings";
 function App() {
   const { token, isLoading, error } = useAuthCheck();
