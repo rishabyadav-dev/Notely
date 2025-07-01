@@ -9,7 +9,7 @@ const useRetrieveNotes = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    let isMounted = true; // Prevent state updates if unmounted
+    let isMounted = true; 
 
     const fetchNotes = async () => {
       setLoading(true);
@@ -53,7 +53,7 @@ const useRetrieveNotes = () => {
     fetchNotes();
 
     return () => {
-      isMounted = false; // Prevent state updates after unmount
+      isMounted = false; 
     };
   }, []);
 
