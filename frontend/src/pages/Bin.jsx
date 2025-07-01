@@ -5,9 +5,7 @@ import { delnotearrayState, notearrayState } from "../recoil/states";
 import Delnote from "../components/Delnote";
 
 export default function Bin() {
-  console.log("bin is opened");
   const [notes, setNotes] = useRecoilState(notearrayState);
-  // const [deletenotes, Setdeletenotes] = useRecoilState(delnotearrayState);
   return (
     <div className="p-10 flex flex-col items-center">
       <div>BIN</div>
