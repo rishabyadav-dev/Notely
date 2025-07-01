@@ -27,7 +27,6 @@ export async function login(email, password) {
   } catch (error) {
     console.log("authservice:login request to backend failed", error);
 
-    // Get the specific error message from the server response if available
     const errorMessage =
       error.response?.data?.error ||
       "Login failed. Please check your credentials.";
