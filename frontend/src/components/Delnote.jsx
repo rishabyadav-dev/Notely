@@ -20,8 +20,7 @@ export default function Delnote({ title, content, id, setNotes }) {
     <div>
       <div
         className="w-[200px] bg-gray-50 duration-700 text-gray-900 border  rounded-[8px]  shadow-lg p-4 transition-all group h-fit hover:bg-gray-100"
-        // onMouseEnter={() => setIsHovered(true)}
-        // onMouseLeave={() => setIsHovered(false)}
+        
       >
         <div
           className={`pl-[5px] pr-[5px] border-none outline-none ${
